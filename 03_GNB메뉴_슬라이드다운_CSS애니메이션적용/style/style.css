@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+@keyframes slidedown {
+    from { 
+        top: -160px;
+    }
+    to {
+        top: 60px;
+    }
+}
+
+
+nav#gnb ul {
+    list-style: none;    
+    padding-left: 0px;
+}
+#gnb>ul {    
+    width: 200px;
+    border: 1px solid #000;    
+    position: relative;
+    
+/*    overflow: hidden;*/
+}
+#gnb>ul>li {
+    z-index: 2;
+} 
+#gnb>ul li {
+    text-align: center;
+    background-color: #fff;
+}
+#gnb ul a {
+    font-size: 30px;
+    text-align: center;
+    padding: 6px 20px;
+    
+    display: inline-block;
+}
+
+#gnb ul.subMenu {
+    display: none;
+    
+    position: absolute;
+    left: 0;
+    top: -160px;
+    
+}
+#gnb ul.subMenu>li {
+    z-index: 1;
+}
+#gnb>ul#mainMenu>li:hover>ul.subMenu {
+    display: block;    
+    animation-name: slidedown;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url("http://zzupd.dothome.co.kr/200528/cssReset/reset.css");
+
+div#origin {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: lightskyblue;
+    
+    transition: all 5s;  /*전이 기능*/ 
+}
+
+div#origin:hover {
+    width: 100px;
+    height: 400px;
+    font-size: 30px;
+    color: #f80;
+    padding: 20px;
+    border: 10px solid #19e3cc;
+    background-color: limegreen;
+}
